@@ -7,39 +7,139 @@
     <title>project</title>
 </head>
 <body>
+    <nav>
+        <div class="fixed-menu">
+            <h1 class="logo">PN</h1>
+            <div class="nav-links">
+                <a href="#main" class="nav-link main-link active">Главная</a>
+                <a href="#about" class="nav-link about-link">Обо мне</a>
+                <a href="#skills" class="nav-link skills-link">Навыки</a>
+                <a href="#works" class="nav-link works-link">Работы</a>
+                <a href="#comments" class="nav-link comments-link">Отзывы</a>
+            </div>
+            <div class="mobile-button">
+                <img src="img/mobile_menu.png" width="40">
+            </div>
+            <div class="mobile-menu hide">
+                <div class="mobile-nav">
+                    <a href="#main" class="nav-link">Главная</a>
+                    <a href="#about" class="nav-link">Обо мне</a>
+                    <a href="#skills" class="nav-link">Навыки</a>
+                    <a href="#works" class="nav-link">Работы</a>
+                    <a href="#comments" class="nav-link">Отзывы</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <section id="main">
-        <img class="planet1" src="img/moving-planet.png" alt="error">
+        <img class="planet1" src="img/moving-planet.png">
         <div class="main-block">
-            <img src="/img/maskot.png" width="125px">
+            <img src="Хомяк.png" width="125px">
             <div class="main-content">
                 <h1 class="main-title">НОВАК ПРОХАР</h1>
                 <p class="main-subtitle">Личная страница разработчика</p>
             </div>
             <div class="button">
-                <a href="#">Подробнее</a>
+                <a href="#about">Подробнее</a>
             </div>
         </div>
     </section>
     <section id="about">
+        <img class="planet2" src="gas-kvas-com-p-krasivaya-nadpis-kosmos-na-prozrachnom-fon-7.png">
+        <h1 class="title">ОБО МНЕ</h1>
         <div class="about-block">
-
+            <div class="about-content">
+                <div class="about-text">
+                   <p class="about-title">Меня зовут Прохар.
+                     Я занимаюсь разработкой современных 
+                     сайтов и приложений.
+                   </p> 
+                   <p><br>Мне нравится создавать интересные и современные проекты.</p>
+                   <div class="button">
+                        <a href="#skills">Мои навыки</a>
+                   </div>
+                </div>
+                <div class="about-card">
+                    <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612295718_7-p-anime-fon-fioletovii-les-9.jpg">
+                    <div>
+                        <p>где живу: Красноярск</p>
+                        <p>возрвст: 12</p>
+                        <p>дата рождения: 2012</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="skills">
+        <h1 class="title">НАВЫКИ</h1>
         <div class="skills-block">
-
+            <div class="skills-card">
+                <h1>ЭТОТ САЙТ СДЕЛАН В РАМКАХ ОБУЧЕНИЯ <br> В ШКОЛЕ</h1>
+                <div class="languages">
+                    <img src="img/html.png">
+                    <img src="img/css.png">
+                    <img src="img/js.png">
+                </div>
+                <div class="button">
+                    <a href="#works">работы</a>
+                </div>
+            </div>
         </div>
     </section>
     <section id="works">
+        <h1 class="title">РАБОТЫ</h1>
         <div class="work-block">
-
+            <img src="img/work1.png">
+            <img src="img/work2.png">
+            <img src="img/work3.png">
         </div>
     </section>
     <section id="comments">
+        <h1 class="title">ОТЗЫВЫ</h1>
         <div class="comments-block">
-
+            <div class="comment-card">
+                <img src="img/photo1.png">
+                <div class="comment-text">
+                    <h1>ВЛАДИМИР</h1>
+                    <h3>Основатель Rocket Tech School</h3>
+                </div>
+            </div>
+            <div class="comment">
+                <div>
+                    <h3>Он проходил обучение веб разработке 6 месяцев, и сразу начал создавал сложные сайты!</h3>
+                </div>
+            </div>
+            <div class="comment-card">
+                <img src="img/photo2.png">
+                <div class="comment-text">
+                    <h1>ДИАНА</h1>
+                    <h3>Product Lead Rocket Tech School</h3>
+                </div>
+            </div>
+            <div class="comment">
+                <div>
+                    <h3>Очень хорошо пишет код. Отличная оптимизация сайта. Современно, стильно, молодежно!</h3>
+                </div>
+            </div>
         </div>
     </section>
-    <script url="newProject"></script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text">
+                <h1>Новак Прохар</h1>
+                <h4>Личный сайт веб-разработчика</h4>
+            </div>
+        </div>
+        <div class="date1">
+            <h3>© 2024</h3>
+        </div>
+        <div class="social-networks">
+            <a href="" target="_parent"><img src="img/telegram.svg"></a>
+            <a href="" target="_parent"><img src="img/discord.svg"></a>
+            <a href="" target="_parent"><img src="img/facebook.svg"></a>
+            <a href="" target="_parent"><img src="img/instagram.svg"></a>     
+        </div>
+    </footer>
+    <script src="newProject.js"></script>
 </body>
 </html>
