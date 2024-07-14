@@ -1,4 +1,4 @@
-let menu = document.querySelector(".fixed-menu")
+  let menu = document.querySelector(".fixed-menu")
 menu.addEventListener("click" , function(event){
     let clickTarget = event.target;
     let activeButton = document.querySelector(".active")
@@ -11,8 +11,13 @@ menu.addEventListener("click" , function(event){
         }
     }
     let body = document.querySelector("body");
-    let mobileMenu = document.querySelector("")
-})
+    let mobileMenu = document.querySelector(".mobile-menu");
+    if(!body.classList.contains("off-scroll") && !mobileMenu.classList.contains('hide')){
+        body.classList.add("off-scroll");
+    }else{
+        body.classList.remove("off-scroll")
+    }
+});
 
 let ClassLink = '.main-link';
 window.onscroll = function() {
